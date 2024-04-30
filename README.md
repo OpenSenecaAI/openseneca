@@ -2,7 +2,7 @@
 
 The opensource library to orchestrate all LLMs around the world (and save money).
 
-_OpenSeneca is in active development, it is not (as yet) ready for production, and some method and library signatures may change in future versions._
+_OpenSeneca is in active development, it is not (for now) ready for production, and something important in the code may change in future versions._
 
 ---
 
@@ -21,6 +21,8 @@ OpenSeneca is a python library with which to easily orchestrate different LLMs f
 The logic behind openseneca is simple: given a prompt, a model trained by us understands the intent of the prompt and selects the best model in terms of quality and price. \
 Let's imagine that you are developing AI-based software, a chatbot for example.
 If the user types “hello,” why use gpt-4 if we could also get a very good response with llama3-8B, a smaller and certainly cheaper model?
+
+Currently only the provider for Azure ([AzureProvider](openseneca/providers/azure.py)) has been implemented in the code. Additional LLM providers will be added very soon.
 
 The [OpenSenecaLLM](https://huggingface.co/OpenSeneca/openseneca-llm-v01) is based on a finetuned and quantized version of google-bert/bert-base-multilingual-cased.
 
