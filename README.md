@@ -87,6 +87,8 @@ You can also just configure two LLMs, such as gpt-3.5 and gpt-4, the [Router](op
 
 ## To-do list
 
+- [ ] Release the LLM-classification table in its (almost) final version
+- [ ] Cost Monitoring (in progress)
 - [ ] Web Inference Server (in progress)
 - [ ] OpenAI Provider class
 - [ ] HuggingFace Provider class
