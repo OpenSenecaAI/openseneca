@@ -133,7 +133,7 @@ class Prompt:
   def __init__(self, messages: List[Dict[Any, Any]]):
 
     StaticOpenSenecaLLMInstance\
-      .set_instance(OpenSenecaLLM(path='./llm/model/openseneca-llm-v01.pt'))
+      .set_instance(OpenSenecaLLM())
 
     self.messages = messages
 

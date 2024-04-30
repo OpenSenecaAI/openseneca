@@ -4,21 +4,21 @@ import torch
 from transformers import BertTokenizer, BertModel
 import numpy as np
 import time
+from huggingface_hub import hf_hub_download
 from openseneca.utils.logger import Logger
 from openseneca.classify.categories import Categories
 import os
+
 from dotenv import load_dotenv
 load_dotenv()
 
-
 logger = Logger()
-
 
 class OpenSenecaLLM(nn.Module):
 
   MAX_SEQ = 128
 
-  def __init__(self, path: str = None):
+  def __init__(self):
       super(OpenSenecaLLM, self).__init__()
       self.bert = BertModel.from_pretrained(
         'google-bert/bert-base-multilingual-cased'
@@ -26,7 +26,21 @@ class OpenSenecaLLM(nn.Module):
       self.dropout = nn.Dropout(0.0)
       self.linear = nn.Linear(768, len(Categories.get()))
       self.relu = nn.ReLU()
-      self.path = path
+
+
+      model_path = os.path.dirname(os.path.abspath(__file__)) + \
+      '/openseneca-llm-v01/openseneca-llm-v01.pt'
+      if not os.path.exists(model_path):
+        # download the model
+        hf_hub_download(
+          repo_id="OpenSeneca/openseneca-llm-v01",
+          filename="openseneca-llm-v01.pt",
+          local_dir=f"{os.path.dirname(os.path.abspath(__file__))}/openseneca-llm-v01/"
+          )
+
+      self.path = model_path
+
+
       self.__tokenizer = \
         BertTokenizer.from_pretrained(
           'google-bert/bert-base-multilingual-cased'
