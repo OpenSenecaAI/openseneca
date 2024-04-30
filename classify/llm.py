@@ -27,19 +27,20 @@ class OpenSenecaLLM(nn.Module):
       self.linear = nn.Linear(768, len(Categories.get()))
       self.relu = nn.ReLU()
 
+      current_path = os.path.dirname(os.path.abspath(__file__))
+      self.path = f'{current_path}/openseneca-llm-v01/openseneca-llm-v01.pt'
 
-      model_path = os.path.dirname(os.path.abspath(__file__)) + \
-      '/openseneca-llm-v01/openseneca-llm-v01.pt'
-      if not os.path.exists(model_path):
-        # download the model
-        hf_hub_download(
-          repo_id="OpenSeneca/openseneca-llm-v01",
-          filename="openseneca-llm-v01.pt",
-          local_dir=f"{os.path.dirname(os.path.abspath(__file__))}/openseneca-llm-v01/"
+      if not os.path.exists(self.path):
+        try:
+          # Download the model
+          hf_hub_download(
+            repo_id="OpenSeneca/openseneca-llm-v01",
+            filename="openseneca-llm-v01.pt",
+            local_dir=f"{current_path}/openseneca-llm-v01/"
           )
-
-      self.path = model_path
-
+        except Exception as e:
+          logger.error(f"Error downloading model: {e}")
+          raise Exception("Error downloading the OpenSeneca-LLM.")
 
       self.__tokenizer = \
         BertTokenizer.from_pretrained(

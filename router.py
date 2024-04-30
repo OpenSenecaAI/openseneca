@@ -92,25 +92,25 @@ class Router:
 
     return best_model, temperature, top_p
 
-  def __get_best_category_only(
-    self,
-    category: str,
-    is_chat: bool = True,
-  ):
-    filtered_df = self.dataframe[
-        (self.dataframe['category_name'] == category) &
-        (self.dataframe['is_chat'] == is_chat)
-    ]
+  # def __get_best_category_only(
+  #   self,
+  #   category: str,
+  #   is_chat: bool = True,
+  # ):
+  #   filtered_df = self.dataframe[
+  #       (self.dataframe['category_name'] == category) &
+  #       (self.dataframe['is_chat'] == is_chat)
+  #   ]
 
-    try:
-      filtered_df = filtered_df.sort_values(by='elo_score', ascending=False)
-      best_model = filtered_df.iloc[0]['model_name']
-      temperature = filtered_df.iloc[0]['temperature']
-      top_p = filtered_df.iloc[0]['top_p']
-    except (ValueError, IndexError):
-      return self.default_model, 0.5, 0.92
+  #   try:
+  #     filtered_df = filtered_df.sort_values(by='elo_score', ascending=False)
+  #     best_model = filtered_df.iloc[0]['model_name']
+  #     temperature = filtered_df.iloc[0]['temperature']
+  #     top_p = filtered_df.iloc[0]['top_p']
+  #   except (ValueError, IndexError):
+  #     return self.default_model, 0.5, 0.92
 
-    return best_model, temperature, top_p
+  #   return best_model, temperature, top_p
 
 
 router_path = os.path.dirname(os.path.abspath(__file__)) + '/router.pk'
