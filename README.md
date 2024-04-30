@@ -1,6 +1,6 @@
 # OpenSeneca
 
-The opensource library to orchestrate all LLMs around the world (and save money).
+**The opensource library to orchestrate all LLMs around the world (and save money).**
 
 _OpenSeneca is in active development, it is not (for now) ready for production, and something important in the code may change in future versions._
 
