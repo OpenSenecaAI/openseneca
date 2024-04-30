@@ -5,14 +5,17 @@ from openseneca.interfaces.providers import BaseProvider
 import os
 from typing import List, Dict, Any
 from dotenv import load_dotenv
-
+import pkg_resources
 from openseneca.interfaces.response import ProviderResponse
 load_dotenv()
 import yaml
 
 def import_model_settings(model_name) -> dict:
     local_path = os.path.dirname(os.path.abspath(__file__))
-    with open(f'{local_path}/../config.yml', 'r') as file:
+    config_file = f'{local_path}/../config.yml'
+    if not os.path.exists(config_file):
+      config_file = pkg_resources.resource_filename('openseneca', 'config.yml')
+    with open(config_file, 'r') as file:
         config = yaml.safe_load(file)
         if model_name not in config["models"]:
           return config["models"]["_DEFAULT"]['settings']

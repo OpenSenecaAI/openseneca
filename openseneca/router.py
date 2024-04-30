@@ -6,6 +6,7 @@ from openseneca.interfaces.models import Model
 from openseneca.utils.inspection import get_model_builder, get_LLMs
 from openseneca.utils.logger import Logger
 from typing import List, Dict, Any
+import pkg_resources
 
 import os
 from dotenv import load_dotenv
@@ -119,6 +120,8 @@ class Router:
 
 
 router_path = os.path.dirname(os.path.abspath(__file__)) + '/router.pk'
+if not os.path.exists(router_path):
+  router_pk_path = pkg_resources.resource_filename('openseneca', 'router.pk')
 router = Router(router_path)
 
 class Prompt:

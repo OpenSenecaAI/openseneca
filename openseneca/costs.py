@@ -1,7 +1,7 @@
 import yaml
 from openseneca.utils.logger import Logger
 import os
-
+import pkg_resources
 logger = Logger()
 
 
@@ -14,6 +14,10 @@ class CostCalculator:
 
   def load_costs_from_config(self):
     local_path = os.path.dirname(os.path.abspath(__file__))
+    config_file = f'{local_path}/../config.yml'
+    if not os.path.exists(config_file):
+      config_file = pkg_resources.resource_filename('openseneca', 'config.yml')
+
     with open(f'{local_path}/config.yml', 'r') as config_file:
       config = yaml.safe_load(config_file)
       llm_config = config.get('models', {}).get(self.llm_name, {})
