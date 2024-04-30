@@ -26,6 +26,19 @@ Currently only the provider for Azure ([AzureProvider](openseneca/providers/azur
 
 The [OpenSenecaLLM](https://huggingface.co/OpenSeneca/openseneca-llm-v01) is based on a finetuned and quantized version of google-bert/bert-base-multilingual-cased.
 
+Currently, OpenSeneca supports the following LLMs:
+
+- gpt-4
+- gpt-3.5
+- llama2-7B
+- llama2-13B
+- llama2-70B
+- llama3-8B
+- llama3-70B
+- mistral-large
+- cohere command-r
+- cohere command-r plus
+
 ## How it works
 
 OpenSeneca recognizes the intent of the prompt, and it selects the best LLM for that task, from those you have configured. \
