@@ -29,7 +29,7 @@ The [OpenSenecaLLM](https://huggingface.co/OpenSeneca/openseneca-llm-v01) is bas
 ## How it works
 
 OpenSeneca recognizes the intent of the prompt, and it selects the best LLM for that task, from those you have configured. \
-Along with the template, it also selects the best configuration for this task (temperatures, top_p).
+Along with the best LLM, it also selects the best configuration for this task (temperatures, top_p).
 
 <img src="./docs/how-it-works-diagram.jpg" />
 
