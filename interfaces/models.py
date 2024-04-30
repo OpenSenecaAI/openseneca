@@ -11,7 +11,8 @@ load_dotenv()
 import yaml
 
 def import_model_settings(model_name) -> dict:
-    with open('config.yml', 'r') as file:
+    local_path = os.path.dirname(os.path.abspath(__file__))
+    with open(f'{local_path}/../config.yml', 'r') as file:
         config = yaml.safe_load(file)
         if model_name not in config["models"]:
           return config["models"]["_DEFAULT"]['settings']

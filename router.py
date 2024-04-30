@@ -3,7 +3,7 @@ from openseneca.classify.llm import OpenSenecaLLM
 from openseneca.classify.static import StaticOpenSenecaLLMInstance
 from langdetect import detect
 from openseneca.interfaces.models import Model
-from openseneca.utils.inspection import get_model_builder
+from openseneca.utils.inspection import get_model_builder, get_LLMs
 from openseneca.utils.logger import Logger
 from typing import List, Dict, Any
 
@@ -24,8 +24,13 @@ class Router:
   def __init__(self, source: str):
     start_time = time.time()
     self.dataframe = pd.read_pickle(source)
-    end_time = time.time()
 
+    llms = get_LLMs()
+    logger.info("LLMS configured: " + str(llms))
+    # Filter the dataframe to only include the models in the LLMs list.
+    self.dataframe = self.dataframe[self.dataframe['model_name'].isin(llms)]
+
+    end_time = time.time()
     logger.debug("Time to load the router file: "\
       f"{round((end_time - start_time) * 1000, 2)} ms.")
 

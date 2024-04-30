@@ -1,0 +1,65 @@
+models:
+  _DEFAULT:
+    settings:
+      temperature: 0.8
+      max_tokens: 2048
+    costs:
+      rating: 50
+      prompt_tokens: 0.001 # $ per 1000;
+      completion_tokens: 0.01
+  LLAMA2_7B_CHAT:
+    settings:
+      top_p: 0.9
+      temperature: 0.7
+      max_tokens: 2048
+    costs:
+      rating: 1
+      prompt_tokens: 0.001 # $
+      completion_tokens: 0.01
+  LLAMA2_13B_CHAT:
+    settings:
+      top_p: 0.9
+      temperature: 0.7
+      max_tokens: 2048
+    costs:
+      rating: 2
+      prompt_tokens: 0.001 # $
+      completion_tokens: 0.01
+  LLAMA2_70B_CHAT:
+    settings:
+      top_p: 0.9
+      temperature: 0.7
+      max_tokens: 2048
+    costs:
+      rating: 3
+      prompt_tokens: 0.001 # $
+      completion_tokens: 0.01
+  GPT3.5_CHAT_TURBO:
+    settings:
+      top_p: 0.9
+      temperature: 0.8
+      max_tokens: 2048
+    costs:
+      prompt_tokens: 0.001 # $
+      completion_tokens: 0.01
+    costs:
+      rating: 4
+  GPT4_CHAT:
+    settings:
+      top_p: 0.9
+      temperature: 0.8
+      max_tokens: 2048
+    costs:
+      prompt_tokens: 0.001 # $
+      completion_tokens: 0.01
+    costs:
+      rating: 100
+  MISTRAL_LARGE_CHAT:
+    settings:
+      top_p: 0.9
+      temperature: 0.8
+      max_tokens: 2048
+    costs:
+      rating: 14
+      prompt_tokens: 0.001 # $
+      completion_tokens: 0.01
