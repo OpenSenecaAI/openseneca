@@ -104,6 +104,7 @@ You can also just configure two LLMs, such as gpt-3.5 and gpt-4, the [Router](op
 - [ ] Release the LLM-classification table in its (almost) final version
 - [ ] Cost Monitoring (in progress)
 - [ ] Web Inference Server (in progress)
+- [ ] Python release from github pipeline
 - [ ] OpenAI Provider class
 - [ ] HuggingFace Provider class
 - [ ] Abstract the authentication module
