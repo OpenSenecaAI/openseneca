@@ -86,7 +86,7 @@ model = prompt.best_llm_builder(
     top_p=prompt.top_p) \
 .build()
 
-res = next(model.request(prompt.messages))
+res = model.request(prompt.messages)
 
 for r in res:
   content = json.loads(res.content)
@@ -100,6 +100,7 @@ You can also just configure two LLMs, such as gpt-3.5 and gpt-4, the [Router](op
 
 ## To-do list
 
+- [ ] Cheaper LLM selection algorithm by elo_score diff
 - [ ] Release the LLM-classification table in its (almost) final version
 - [ ] Cost Monitoring (in progress)
 - [ ] Web Inference Server (in progress)
