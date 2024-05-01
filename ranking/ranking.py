@@ -160,6 +160,7 @@ class RankedModel:
 
     try:
       df = df.sort_values(['category_name', 'elo_score'], ascending=[True, False])
+      df['elo_score'] = df['elo_score'].astype(int)
       df.to_csv(self.router_file_name, index=False, encoding='utf-8')
       self.unlock_file(_id)  # Unlock the file
     except Exception as e:
