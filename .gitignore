@@ -165,3 +165,7 @@ cython_debug/
 
 # LLMs
 classify/openseneca-llm-v01
+
+# lock files
+.lock
+.lock*
