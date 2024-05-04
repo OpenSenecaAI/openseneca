@@ -15,9 +15,11 @@ from openseneca.interfaces.models import Model
 from openseneca.utils.logger import Logger
 from typing import Tuple
 import json
+import concurrent.futures
 load_dotenv()
-
 logger = Logger()
+
+judging_timeouts = 90
 
 assert os.environ.get("AZURE_OPENAI_API_KEY") is not None, \
     "Please set AZURE_OPENAI_API_KEY environment variable"
@@ -144,11 +146,22 @@ class Evaluator:
     result = template.format(result_a=result_a, result_b=result_b)
     logger.debug(result)
 
-    logger.info("Judging...")
-    eval_result = self.evaluator.evaluate_strings(
-      prediction=result,
-      input=message.content,
-    )
+    try:
+      # This because the evaluation through gpt-4 or bigger models sometimes
+      # takes long time to response and evaluate the result. It seems that
+      # when it happens the script stuck and the evaluation never ends.
+      # So, we are using ThreadPoolExecutor to limit the time of the evaluation
+      # and take control of the evaluation time.
+      with concurrent.futures.ThreadPoolExecutor() as executor:
+        logger.info("Judging...")
+        future = executor.submit(
+          self.evaluator.evaluate_strings,
+          prediction=result,
+          input=message.content
+        )
+        eval_result = future.result(timeout=judging_timeouts)
+    except concurrent.futures.TimeoutError:
+      raise Exception(f"Evaluation took longer than {judging_timeouts}s.")
 
     logger.info(eval_result)
 

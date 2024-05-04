@@ -4,8 +4,6 @@ from openseneca.interfaces.response import ProviderResponse
 from openseneca.utils.logger import Logger
 from openseneca.costs import CostCalculator
 from typing import Generator
-import http.client
-import logging
 import requests
 import time
 import json
@@ -26,14 +24,6 @@ import json
 logger = Logger()
 
 class AzureProvider(BaseProvider):
-  def __init__(self, stream: bool = False):
-    """
-    Initializes an instance of the Azure class.
-
-    Args:
-      stream (bool, optional): Whether to enable streaming. Defaults to False.
-    """
-    self.stream = stream
 
   def request(self,
          endpoint: str,
@@ -76,8 +66,11 @@ class AzureProvider(BaseProvider):
         "stream": stream
       })
 
+    # Retry the request up to 3 times.
     retry_attempts = 3
-    retry_delay = 5
+    # Wait 10 seconds before retrying, just to try to avoid rate limiting.
+    retry_delay = 10
+
     costs_calulator = CostCalculator(self.llm_name)
 
     for attempt in range(retry_attempts):
@@ -90,7 +83,7 @@ class AzureProvider(BaseProvider):
           endpoint,
           json=body,
           headers=headers,
-          timeout=120,  # TODO: Make this configurable
+          timeout=self.timeout,
           stream=stream
         )
 
@@ -145,7 +138,6 @@ class AzureProvider(BaseProvider):
             )
 
           else:
-            # mh?
             final_response = ProviderResponse(
               response.status_code,
               response.headers,
@@ -159,9 +151,12 @@ class AzureProvider(BaseProvider):
 
           yield final_response
       except requests.exceptions.Timeout:
-        if attempt < retry_attempts - 1:
+        if attempt < (retry_attempts - 1):
+          logger.error(f"Request timed out. Retrying in {retry_delay}s...")
           time.sleep(retry_delay)
         else:
+          logger.error("Request timed out. No more retries. " \
+            "Emitting empty response.")
           yield ProviderResponse(0, {}, "{}")
 
       return

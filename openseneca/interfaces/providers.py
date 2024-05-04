@@ -10,6 +10,21 @@ class BaseProvider(ABC):
 
   llm_name = None
 
+  def __init__(
+    self,
+    stream: bool = False,
+    timeout: int = 120
+  ):
+    """
+    Initializes an instance of the Base Provider class.
+
+    Args:
+      stream (bool, optional): Whether to enable streaming. Defaults to False.
+      timeout (int, optional): The request timeout in seconds. Defaults to 120.
+    """
+    self.stream = stream
+    self.timeout = timeout
+
   @abstractmethod
   def request(self,
         endpoint: str,

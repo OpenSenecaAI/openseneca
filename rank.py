@@ -24,8 +24,8 @@ def run_game():
     logger.info("Starting a new game...")
     try:
       dataset = Dataset()
-      game = Game(k_factor=32, provider=AzureProvider())
-      for i in range(1, MAX_GAMES_PER_THREAD + 1):
+      game = Game(k_factor=32, provider=AzureProvider(timeout=180))
+      for _ in range(1, MAX_GAMES_PER_THREAD + 1):
         prompt, language = dataset.get_random_chat()
         game.play(prompt=prompt, language=language)
       break  # if no errors occurred, exit the loop
