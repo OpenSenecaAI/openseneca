@@ -119,7 +119,6 @@ class AzureProvider(BaseProvider):
           time.sleep(0.1)
 
         else:  # not streaming, just return the entire response
-          logger.info('not streaming')
           json_object = json.loads(response.text)
           if json_object and 'usage' in json_object:
             _usage = json_object['usage']
@@ -154,9 +153,10 @@ class AzureProvider(BaseProvider):
         if attempt < (retry_attempts - 1):
           logger.error(f"Request timed out. Retrying in {retry_delay}s...")
           time.sleep(retry_delay)
+          continue # retry
         else:
           logger.error("Request timed out. No more retries. " \
             "Emitting empty response.")
           yield ProviderResponse(0, {}, "{}")
 
-      return
+    return
