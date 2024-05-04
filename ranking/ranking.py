@@ -185,13 +185,9 @@ class RankedModel:
     lock_file_path = f".lock_{id}"
     result = os.path.exists(lock_file_path)
     if result:
-      # # Check if the lock file is older than 15 seconds
-      # if time.time() - os.path.getmtime(lock_file_path) > 15:
-      #   logger.info(f"Forcing unlock of file: {lock_file_path}")
-      #   os.remove(lock_file_path)
-      #   result = False
-      # else:
       logger.info(f"File is locked: {lock_file_path}")
+      # Sleep for 0.5 seconds, and retun to check again, probably.
+      time.sleep(0.5)
     return result
 
   def unlock_file(self, id: str):
