@@ -3990,8 +3990,8 @@ fact_checking,False,False,ja,True,0.5,0.5,LLAMA3_8B_CHAT,131
 fact_checking,False,False,de,True,0.25,0.9,GPT4_CHAT,131
 fact_checking,False,False,ja,True,0.5,0.75,COHERE_COMMAND_R_CHAT,131
 fact_checking,False,False,ja,True,0.9,0.9,LLAMA2_13B_CHAT,131
+fact_checking,False,False,ru,True,0.25,0.5,LLAMA2_7B_CHAT,131
 fact_checking,True,False,en,True,0.8,0.75,LLAMA2_13B_CHAT,130
-fact_checking,False,False,ru,True,0.9,0.75,LLAMA2_70B_CHAT,130
 fact_checking,False,False,de,True,0.25,0.9,LLAMA2_70B_CHAT,130
 fact_checking,False,False,de,True,0.9,0.9,GPT3.5_CHAT_TURBO,130
 fact_checking,False,False,zh,True,0.9,0.5,MISTRAL_LARGE_CHAT,130
@@ -4005,6 +4005,7 @@ fact_checking,True,False,ja,True,0.5,0.9,LLAMA2_70B_CHAT,126
 fact_checking,True,False,ja,True,0.8,0.5,GPT4_CHAT,117
 fact_checking,False,False,ja,True,0.5,0.5,COHERE_COMMAND_R_PLUS_CHAT,117
 fact_checking,False,False,ja,True,0.8,0.75,LLAMA2_70B_CHAT,117
+fact_checking,False,False,ru,True,0.5,0.75,MISTRAL_LARGE_CHAT,117
 fact_checking,False,False,fr,True,0.8,0.5,GPT3.5_CHAT_TURBO,116
 fact_checking,False,False,fr,True,0.8,0.9,GPT3.5_CHAT_TURBO,116
 fact_checking,False,False,fr,True,0.25,0.75,GPT3.5_CHAT_TURBO,116
@@ -4100,6 +4101,10 @@ fact_checking,False,False,en,True,0.25,0.9,LLAMA2_13B_CHAT,116
 fact_checking,False,False,en,True,0.9,0.5,LLAMA2_13B_CHAT,116
 fact_checking,False,False,ja,True,0.5,0.75,LLAMA2_13B_CHAT,116
 fact_checking,False,False,it,True,0.25,0.5,COHERE_COMMAND_R_PLUS_CHAT,116
+fact_checking,False,False,ru,True,0.25,0.75,LLAMA2_7B_CHAT,116
+fact_checking,False,False,ru,True,0.8,0.75,LLAMA2_7B_CHAT,116
+fact_checking,False,False,ru,True,0.8,0.5,LLAMA2_13B_CHAT,116
+fact_checking,False,False,ru,True,0.5,0.9,LLAMA2_70B_CHAT,116
 fact_checking,False,False,fr,True,0.8,0.75,COHERE_COMMAND_R_PLUS_CHAT,115
 fact_checking,False,False,fr,True,0.25,0.9,COHERE_COMMAND_R_PLUS_CHAT,115
 fact_checking,False,False,ko,True,0.25,0.5,GPT4_CHAT,115
@@ -4127,6 +4132,8 @@ fact_checking,True,False,en,True,0.9,0.5,COHERE_COMMAND_R_CHAT,114
 fact_checking,False,False,ja,True,0.8,0.9,LLAMA3_8B_CHAT,114
 fact_checking,False,False,ja,True,0.25,0.9,COHERE_COMMAND_R_PLUS_CHAT,114
 fact_checking,False,False,ja,True,0.9,0.75,LLAMA2_13B_CHAT,114
+fact_checking,False,False,ru,True,0.8,0.9,LLAMA2_13B_CHAT,114
+fact_checking,False,False,ru,True,0.9,0.75,LLAMA2_70B_CHAT,112
 fact_checking,True,False,ja,True,0.8,0.5,LLAMA2_70B_CHAT,110
 fact_checking,False,False,ru,True,0.25,0.75,GPT4_CHAT,101
 fact_checking,False,False,fr,True,0.8,0.9,LLAMA2_7B_CHAT,101
@@ -4159,6 +4166,7 @@ fact_checking,False,False,es,True,0.9,0.75,LLAMA2_13B_CHAT,99
 fact_checking,False,False,ru,True,0.5,0.75,GPT4_CHAT,99
 fact_checking,False,False,de,True,0.8,0.5,LLAMA2_70B_CHAT,99
 fact_checking,False,False,ru,True,0.5,0.5,LLAMA2_7B_CHAT,99
+fact_checking,False,False,ru,True,0.9,0.5,LLAMA2_13B_CHAT,99
 fact_checking,False,False,de,True,0.9,0.9,GPT4_CHAT,98
 fact_checking,False,False,ja,True,0.25,0.9,GPT3.5_CHAT_TURBO,98
 fact_checking,False,False,fr,True,0.9,0.9,MISTRAL_LARGE_CHAT,98
@@ -4179,9 +4187,7 @@ fact_checking,True,False,en,True,0.5,0.5,LLAMA2_13B_CHAT,84
 fact_checking,True,False,en,True,0.5,0.75,LLAMA2_13B_CHAT,84
 fact_checking,True,False,en,True,0.5,0.9,GPT4_CHAT,84
 fact_checking,False,False,ru,True,0.9,0.5,LLAMA2_70B_CHAT,84
-fact_checking,False,False,ru,True,0.25,0.75,LLAMA2_7B_CHAT,84
 fact_checking,False,False,ru,True,0.9,0.9,LLAMA2_7B_CHAT,84
-fact_checking,False,False,ru,True,0.9,0.75,LLAMA2_7B_CHAT,84
 fact_checking,False,False,ru,True,0.9,0.9,LLAMA2_70B_CHAT,84
 fact_checking,False,False,ru,True,0.9,0.5,LLAMA2_7B_CHAT,84
 fact_checking,False,False,de,True,0.25,0.9,LLAMA2_7B_CHAT,84
@@ -4270,6 +4276,12 @@ fact_checking,False,False,en,True,0.5,0.75,LLAMA2_70B_CHAT,84
 fact_checking,False,False,ja,True,0.8,0.9,COHERE_COMMAND_R_CHAT,84
 fact_checking,False,False,ja,True,0.5,0.5,LLAMA2_7B_CHAT,84
 fact_checking,False,False,it,True,0.5,0.9,LLAMA3_8B_CHAT,84
+fact_checking,False,False,ru,True,0.9,0.75,LLAMA2_13B_CHAT,84
+fact_checking,False,False,ru,True,0.5,0.5,LLAMA2_13B_CHAT,84
+fact_checking,False,False,ru,True,0.5,0.9,LLAMA2_7B_CHAT,84
+fact_checking,False,False,ru,True,0.5,0.75,LLAMA2_13B_CHAT,84
+fact_checking,False,False,ru,True,0.25,0.5,LLAMA2_13B_CHAT,84
+fact_checking,False,False,ru,True,0.9,0.9,MISTRAL_LARGE_CHAT,84
 fact_checking,True,False,en,True,0.8,0.75,GPT4_CHAT,83
 fact_checking,True,False,en,True,0.5,0.5,GPT4_CHAT,83
 fact_checking,False,False,de,True,0.9,0.5,LLAMA2_7B_CHAT,83
@@ -4321,6 +4333,7 @@ fact_checking,False,False,ja,True,0.9,0.5,GPT4_CHAT,53
 fact_checking,True,False,en,True,0.5,0.5,GPT3.5_CHAT_TURBO,53
 fact_checking,False,False,fr,True,0.9,0.9,LLAMA2_7B_CHAT,53
 fact_checking,False,False,ko,True,0.25,0.75,LLAMA3_70B_CHAT,53
+fact_checking,False,False,ru,True,0.9,0.75,LLAMA2_7B_CHAT,52
 fact_checking,False,False,ja,True,0.9,0.9,LLAMA3_8B_CHAT,52
 fact_checking,False,False,ja,True,0.25,0.75,COHERE_COMMAND_R_PLUS_CHAT,52
 fact_checking,True,False,ja,True,0.9,0.9,GPT4_CHAT,26
@@ -5084,6 +5097,7 @@ history_analysis,False,False,fr,True,0.9,0.5,COHERE_COMMAND_R_CHAT,37
 history_search,False,False,fr,True,0.25,0.5,LLAMA2_13B_CHAT,159
 history_search,False,False,fr,True,0.9,0.75,COHERE_COMMAND_R_CHAT,146
 history_search,False,False,ja,True,0.5,0.5,LLAMA2_70B_CHAT,145
+history_search,False,False,zh,True,0.8,0.75,LLAMA2_13B_CHAT,145
 history_search,False,False,fr,True,0.25,0.9,COHERE_COMMAND_R_CHAT,144
 history_search,False,False,ja,True,0.8,0.5,GPT4_CHAT,144
 history_search,False,False,fr,True,0.9,0.9,COHERE_COMMAND_R_CHAT,144
@@ -5101,6 +5115,7 @@ history_search,False,False,ja,True,0.25,0.75,LLAMA2_70B_CHAT,130
 history_search,False,False,it,True,0.25,0.9,MISTRAL_LARGE_CHAT,130
 history_search,False,False,es,True,0.9,0.9,LLAMA2_13B_CHAT,130
 history_search,False,False,ja,True,0.9,0.9,GPT4_CHAT,130
+history_search,False,False,zh,True,0.8,0.9,LLAMA2_13B_CHAT,130
 history_search,False,False,pt,True,0.9,0.5,LLAMA3_8B_CHAT,117
 history_search,False,False,pt,True,0.9,0.9,LLAMA2_70B_CHAT,116
 history_search,False,False,ja,True,0.25,0.5,LLAMA2_70B_CHAT,116
@@ -5148,6 +5163,8 @@ history_search,False,False,fr,True,0.25,0.75,LLAMA2_13B_CHAT,116
 history_search,False,False,fr,True,0.9,0.5,COHERE_COMMAND_R_CHAT,116
 history_search,False,False,fr,True,0.8,0.5,COHERE_COMMAND_R_CHAT,116
 history_search,False,False,fr,True,0.25,0.9,LLAMA2_13B_CHAT,116
+history_search,False,False,zh,True,0.5,0.75,LLAMA2_13B_CHAT,116
+history_search,False,False,zh,True,0.5,0.5,LLAMA2_7B_CHAT,116
 history_search,False,False,es,True,0.9,0.5,LLAMA2_13B_CHAT,115
 history_search,False,False,es,True,0.25,0.9,LLAMA2_13B_CHAT,115
 history_search,False,False,es,True,0.9,0.75,LLAMA2_13B_CHAT,115
@@ -5185,6 +5202,7 @@ history_search,False,False,es,True,0.9,0.9,GPT3.5_CHAT_TURBO,86
 history_search,False,False,fr,True,0.8,0.5,LLAMA2_70B_CHAT,86
 history_search,False,False,ja,True,0.9,0.5,LLAMA2_7B_CHAT,85
 history_search,False,False,es,True,0.8,0.75,GPT4_CHAT,85
+history_search,False,False,zh,True,0.25,0.75,LLAMA2_7B_CHAT,85
 history_search,False,False,pt,True,0.8,0.9,LLAMA2_7B_CHAT,84
 history_search,False,False,ja,True,0.5,0.5,LLAMA2_7B_CHAT,84
 history_search,False,False,ja,True,0.5,0.9,LLAMA2_7B_CHAT,84
@@ -5232,6 +5250,10 @@ history_search,False,False,fr,True,0.5,0.75,COHERE_COMMAND_R_CHAT,84
 history_search,False,False,fr,True,0.8,0.5,LLAMA2_13B_CHAT,84
 history_search,False,False,fr,True,0.5,0.9,LLAMA2_13B_CHAT,84
 history_search,False,False,fr,True,0.5,0.9,COHERE_COMMAND_R_CHAT,84
+history_search,False,False,zh,True,0.25,0.9,LLAMA2_13B_CHAT,84
+history_search,False,False,zh,True,0.8,0.75,LLAMA2_7B_CHAT,84
+history_search,False,False,zh,True,0.25,0.5,LLAMA2_7B_CHAT,84
+history_search,False,False,zh,True,0.8,0.5,LLAMA2_7B_CHAT,84
 history_search,False,False,es,True,0.8,0.75,GPT3.5_CHAT_TURBO,83
 history_search,False,False,pt,True,0.25,0.75,LLAMA2_7B_CHAT,83
 history_search,False,False,fr,True,0.9,0.75,MISTRAL_LARGE_CHAT,83
@@ -5248,6 +5270,7 @@ history_search,False,False,ja,True,0.8,0.5,LLAMA2_13B_CHAT,69
 history_search,False,False,pt,True,0.25,0.5,LLAMA2_70B_CHAT,69
 history_search,False,False,pt,True,0.8,0.9,LLAMA2_70B_CHAT,69
 history_search,False,False,it,True,0.25,0.9,LLAMA2_7B_CHAT,69
+history_search,False,False,zh,True,0.9,0.5,LLAMA2_7B_CHAT,68
 history_search,False,False,fr,True,0.25,0.9,LLAMA2_7B_CHAT,68
 history_search,False,False,ja,True,0.25,0.5,LLAMA2_13B_CHAT,68
 history_search,False,False,es,True,0.8,0.5,GPT3.5_CHAT_TURBO,68
@@ -6277,6 +6300,8 @@ linguistic_analysis,False,False,ja,True,0.8,0.5,COHERE_COMMAND_R_CHAT,131
 linguistic_analysis,False,False,en,True,0.25,0.9,LLAMA3_70B_CHAT,131
 linguistic_analysis,False,False,zh,True,0.9,0.5,LLAMA2_70B_CHAT,131
 linguistic_analysis,False,True,de,True,0.8,0.75,COHERE_COMMAND_R_PLUS_CHAT,131
+linguistic_analysis,False,False,it,True,0.9,0.9,LLAMA3_8B_CHAT,131
+linguistic_analysis,False,False,it,True,0.8,0.5,LLAMA3_8B_CHAT,131
 linguistic_analysis,False,False,pt,True,0.25,0.5,LLAMA2_7B_CHAT,130
 linguistic_analysis,False,False,pt,True,0.9,0.75,LLAMA2_13B_CHAT,130
 linguistic_analysis,False,False,pt,True,0.8,0.9,GPT4_CHAT,130
@@ -6444,6 +6469,10 @@ linguistic_analysis,False,True,it,True,0.25,0.9,LLAMA3_8B_CHAT,84
 linguistic_analysis,False,True,it,True,0.9,0.9,MISTRAL_LARGE_CHAT,84
 linguistic_analysis,False,True,it,True,0.25,0.9,MISTRAL_LARGE_CHAT,84
 linguistic_analysis,False,True,it,True,0.5,0.5,LLAMA2_70B_CHAT,84
+linguistic_analysis,False,False,it,True,0.8,0.5,LLAMA2_7B_CHAT,84
+linguistic_analysis,False,False,it,True,0.8,0.75,LLAMA2_7B_CHAT,84
+linguistic_analysis,False,False,it,True,0.5,0.75,LLAMA2_7B_CHAT,84
+linguistic_analysis,False,False,it,True,0.25,0.75,LLAMA2_7B_CHAT,84
 linguistic_analysis,False,False,en,True,0.8,0.5,LLAMA3_8B_CHAT,83
 linguistic_analysis,False,False,en,True,0.5,0.9,LLAMA3_8B_CHAT,83
 linguistic_analysis,False,False,ja,True,0.25,0.5,COHERE_COMMAND_R_CHAT,83
@@ -7520,6 +7549,7 @@ place_search,False,False,zh,True,0.25,0.5,GPT4_CHAT,131
 place_search,False,False,zh,True,0.8,0.9,COHERE_COMMAND_R_PLUS_CHAT,131
 place_search,False,False,zh,True,0.8,0.75,COHERE_COMMAND_R_PLUS_CHAT,131
 place_search,False,False,zh,True,0.8,0.5,GPT4_CHAT,131
+place_search,False,False,en,True,0.25,0.75,LLAMA2_13B_CHAT,131
 place_search,False,False,ko,True,0.5,0.75,LLAMA2_7B_CHAT,130
 place_search,False,False,de,True,0.5,0.9,MISTRAL_LARGE_CHAT,130
 place_search,False,False,de,True,0.8,0.75,COHERE_COMMAND_R_CHAT,130
@@ -7584,6 +7614,9 @@ place_search,False,False,ko,True,0.25,0.5,GPT3.5_CHAT_TURBO,116
 place_search,False,False,ko,True,0.25,0.5,COHERE_COMMAND_R_CHAT,116
 place_search,False,False,ko,True,0.8,0.5,LLAMA3_8B_CHAT,116
 place_search,False,False,ru,True,0.5,0.5,GPT4_CHAT,116
+place_search,False,False,en,True,0.8,0.5,LLAMA2_7B_CHAT,116
+place_search,False,False,en,True,0.5,0.9,LLAMA2_13B_CHAT,116
+place_search,False,False,en,True,0.9,0.5,LLAMA2_7B_CHAT,116
 place_search,False,False,pt,True,0.8,0.75,MISTRAL_LARGE_CHAT,115
 place_search,False,False,de,True,0.5,0.75,MISTRAL_LARGE_CHAT,115
 place_search,False,False,de,True,0.9,0.75,MISTRAL_LARGE_CHAT,115
@@ -7690,6 +7723,12 @@ place_search,False,False,ko,True,0.25,0.9,GPT3.5_CHAT_TURBO,84
 place_search,False,False,ko,True,0.8,0.5,GPT3.5_CHAT_TURBO,84
 place_search,False,False,ko,True,0.5,0.75,LLAMA2_13B_CHAT,84
 place_search,False,False,ru,True,0.9,0.9,COHERE_COMMAND_R_PLUS_CHAT,84
+place_search,False,False,en,True,0.9,0.9,LLAMA2_7B_CHAT,84
+place_search,False,False,en,True,0.8,0.9,LLAMA2_13B_CHAT,84
+place_search,False,False,en,True,0.5,0.9,LLAMA2_7B_CHAT,84
+place_search,False,False,en,True,0.9,0.9,LLAMA2_13B_CHAT,84
+place_search,False,False,en,True,0.5,0.75,LLAMA2_7B_CHAT,84
+place_search,False,False,en,True,0.5,0.75,LLAMA2_13B_CHAT,84
 place_search,False,False,ja,True,0.9,0.5,GPT4_CHAT,83
 place_search,False,False,ru,True,0.8,0.5,LLAMA2_13B_CHAT,83
 place_search,False,False,it,True,0.5,0.75,LLAMA2_13B_CHAT,83
@@ -7730,7 +7769,6 @@ psychology_support,False,False,ru,True,0.25,0.9,LLAMA2_70B_CHAT,160
 psychology_support,False,False,ru,True,0.5,0.9,GPT4_CHAT,158
 psychology_support,False,False,pt,True,0.8,0.5,GPT3.5_CHAT_TURBO,158
 psychology_support,False,True,ru,True,0.9,0.75,MISTRAL_LARGE_CHAT,158
-psychology_support,False,False,ru,True,0.5,0.5,COHERE_COMMAND_R_PLUS_CHAT,157
 psychology_support,False,False,ru,True,0.25,0.5,GPT4_CHAT,157
 psychology_support,False,False,ru,True,0.9,0.5,GPT4_CHAT,157
 psychology_support,False,False,pt,True,0.9,0.9,COHERE_COMMAND_R_PLUS_CHAT,157
@@ -7787,6 +7825,8 @@ psychology_support,False,False,pt,True,0.25,0.5,COHERE_COMMAND_R_PLUS_CHAT,131
 psychology_support,False,False,ja,True,0.5,0.9,GPT4_CHAT,131
 psychology_support,False,True,ru,True,0.25,0.75,MISTRAL_LARGE_CHAT,131
 psychology_support,False,True,ru,True,0.8,0.5,MISTRAL_LARGE_CHAT,131
+psychology_support,False,False,ru,True,0.8,0.9,COHERE_COMMAND_R_PLUS_CHAT,131
+psychology_support,False,False,ru,True,0.5,0.5,COHERE_COMMAND_R_PLUS_CHAT,130
 psychology_support,False,False,fr,True,0.25,0.9,COHERE_COMMAND_R_CHAT,130
 psychology_support,False,True,ru,True,0.25,0.75,COHERE_COMMAND_R_CHAT,130
 psychology_support,False,False,en,True,0.9,0.5,MISTRAL_LARGE_CHAT,130
@@ -7893,8 +7933,6 @@ psychology_support,False,False,pt,True,0.9,0.5,LLAMA2_70B_CHAT,116
 psychology_support,False,False,pt,True,0.5,0.5,COHERE_COMMAND_R_PLUS_CHAT,116
 psychology_support,False,False,ru,True,0.5,0.75,GPT3.5_CHAT_TURBO,116
 psychology_support,False,False,ru,True,0.5,0.5,GPT3.5_CHAT_TURBO,116
-psychology_support,False,False,ru,True,0.8,0.9,COHERE_COMMAND_R_PLUS_CHAT,116
-psychology_support,False,False,ru,True,0.25,0.9,COHERE_COMMAND_R_PLUS_CHAT,116
 psychology_support,False,False,ru,True,0.8,0.5,GPT4_CHAT,116
 psychology_support,False,False,ja,True,0.8,0.5,COHERE_COMMAND_R_PLUS_CHAT,116
 psychology_support,False,False,es,True,0.25,0.75,GPT4_CHAT,116
@@ -8024,6 +8062,7 @@ psychology_support,False,False,ru,True,0.25,0.9,GPT3.5_CHAT_TURBO,113
 psychology_support,False,False,fr,True,0.9,0.75,COHERE_COMMAND_R_PLUS_CHAT,113
 psychology_support,False,True,ko,True,0.9,0.5,LLAMA3_8B_CHAT,113
 psychology_support,False,False,pt,True,0.25,0.5,COHERE_COMMAND_R_CHAT,113
+psychology_support,False,False,ru,True,0.25,0.9,COHERE_COMMAND_R_PLUS_CHAT,113
 psychology_support,False,False,de,True,0.25,0.5,LLAMA2_13B_CHAT,112
 psychology_support,False,False,de,True,0.25,0.9,LLAMA2_13B_CHAT,112
 psychology_support,False,False,ru,True,0.8,0.75,GPT4_CHAT,111
@@ -8033,6 +8072,9 @@ psychology_support,False,False,de,True,0.5,0.5,LLAMA3_8B_CHAT,103
 psychology_support,False,False,it,True,0.5,0.9,LLAMA2_7B_CHAT,103
 psychology_support,False,True,ru,True,0.5,0.75,COHERE_COMMAND_R_CHAT,102
 psychology_support,False,False,pt,True,0.25,0.75,COHERE_COMMAND_R_CHAT,102
+psychology_support,False,False,ru,True,0.5,0.5,LLAMA2_13B_CHAT,102
+psychology_support,False,False,ru,True,0.8,0.75,LLAMA2_13B_CHAT,102
+psychology_support,False,False,ru,True,0.9,0.9,LLAMA2_13B_CHAT,102
 psychology_support,False,False,zh,True,0.25,0.5,LLAMA2_7B_CHAT,101
 psychology_support,False,False,de,True,0.9,0.75,LLAMA3_8B_CHAT,101
 psychology_support,False,False,fr,True,0.5,0.75,LLAMA2_70B_CHAT,101
@@ -8061,6 +8103,7 @@ psychology_support,False,False,pt,True,0.9,0.5,LLAMA2_13B_CHAT,100
 psychology_support,False,False,ja,True,0.8,0.5,LLAMA3_70B_CHAT,100
 psychology_support,False,True,ru,True,0.8,0.9,MISTRAL_LARGE_CHAT,100
 psychology_support,False,True,ru,True,0.5,0.9,MISTRAL_LARGE_CHAT,100
+psychology_support,False,False,ru,True,0.25,0.9,LLAMA2_13B_CHAT,100
 psychology_support,False,True,ru,True,0.5,0.75,GPT4_CHAT,99
 psychology_support,False,True,ru,True,0.25,0.9,GPT4_CHAT,99
 psychology_support,False,False,pt,True,0.9,0.5,LLAMA3_8B_CHAT,99
@@ -8078,6 +8121,8 @@ psychology_support,False,False,it,True,0.9,0.9,LLAMA2_70B_CHAT,99
 psychology_support,False,False,it,True,0.9,0.75,LLAMA2_70B_CHAT,99
 psychology_support,False,False,ru,True,0.25,0.75,COHERE_COMMAND_R_PLUS_CHAT,99
 psychology_support,False,True,ko,True,0.9,0.75,LLAMA3_8B_CHAT,99
+psychology_support,False,False,ru,True,0.25,0.5,LLAMA2_13B_CHAT,99
+psychology_support,False,False,ru,True,0.5,0.9,LLAMA2_13B_CHAT,99
 psychology_support,False,True,ru,True,0.25,0.5,LLAMA2_13B_CHAT,98
 psychology_support,False,False,pt,True,0.25,0.75,LLAMA3_8B_CHAT,98
 psychology_support,False,False,pt,True,0.8,0.9,LLAMA3_8B_CHAT,98
@@ -8097,6 +8142,7 @@ psychology_support,False,True,ru,True,0.8,0.75,COHERE_COMMAND_R_CHAT,96
 psychology_support,False,False,ru,True,0.25,0.75,LLAMA2_70B_CHAT,95
 psychology_support,False,False,pt,True,0.5,0.75,MISTRAL_LARGE_CHAT,90
 psychology_support,False,False,ja,True,0.5,0.9,LLAMA2_70B_CHAT,87
+psychology_support,False,False,ru,True,0.8,0.5,COHERE_COMMAND_R_PLUS_CHAT,87
 psychology_support,False,False,ru,True,0.9,0.75,COHERE_COMMAND_R_PLUS_CHAT,86
 psychology_support,False,False,fr,True,0.9,0.75,LLAMA2_70B_CHAT,86
 psychology_support,False,False,de,True,0.8,0.75,GPT3.5_CHAT_TURBO,86
@@ -8111,16 +8157,15 @@ psychology_support,False,False,ja,True,0.25,0.5,LLAMA2_7B_CHAT,85
 psychology_support,False,False,de,True,0.9,0.75,LLAMA2_7B_CHAT,85
 psychology_support,False,False,pt,True,0.9,0.75,COHERE_COMMAND_R_CHAT,85
 psychology_support,False,False,pt,True,0.25,0.9,COHERE_COMMAND_R_CHAT,85
-psychology_support,False,False,ru,True,0.5,0.5,LLAMA2_13B_CHAT,85
 psychology_support,False,False,ja,True,0.9,0.5,LLAMA2_13B_CHAT,85
 psychology_support,False,False,ru,True,0.5,0.5,LLAMA2_7B_CHAT,85
-psychology_support,False,False,ru,True,0.9,0.5,LLAMA2_7B_CHAT,85
 psychology_support,False,False,zh,True,0.5,0.75,COHERE_COMMAND_R_PLUS_CHAT,85
 psychology_support,False,False,pt,True,0.25,0.75,LLAMA2_13B_CHAT,85
 psychology_support,False,False,pt,True,0.9,0.9,LLAMA2_7B_CHAT,85
 psychology_support,False,False,pt,True,0.25,0.9,MISTRAL_LARGE_CHAT,85
 psychology_support,False,False,ja,True,0.8,0.75,LLAMA2_70B_CHAT,85
 psychology_support,False,False,ja,True,0.9,0.5,LLAMA2_70B_CHAT,85
+psychology_support,False,False,ru,True,0.5,0.9,COHERE_COMMAND_R_PLUS_CHAT,85
 psychology_support,False,False,ru,True,0.9,0.5,LLAMA2_13B_CHAT,84
 psychology_support,False,False,ru,True,0.8,0.75,COHERE_COMMAND_R_PLUS_CHAT,84
 psychology_support,False,False,it,True,0.25,0.9,GPT3.5_CHAT_TURBO,84
@@ -8160,8 +8205,7 @@ psychology_support,False,True,pt,True,0.25,0.75,LLAMA3_8B_CHAT,84
 psychology_support,True,False,ru,True,0.9,0.9,LLAMA2_13B_CHAT,84
 psychology_support,True,False,ru,True,0.9,0.75,LLAMA2_13B_CHAT,84
 psychology_support,True,False,ru,True,0.25,0.5,LLAMA2_13B_CHAT,84
-psychology_support,True,False,ru,True,0.5,0.9,LLAMA2_13B_CHAT,84
-psychology_support,False,False,de,True,0.9,0.9,COHERE_COMMAND_R_CHAT,84
+psycpsychology_support,False,False,de,True,0.9,0.9,COHERE_COMMAND_R_CHAT,84
 psychology_support,False,False,de,True,0.9,0.75,COHERE_COMMAND_R_CHAT,84
 psychology_support,False,False,de,True,0.5,0.5,LLAMA2_7B_CHAT,84
 psychology_support,False,False,en,True,0.8,0.75,LLAMA2_7B_CHAT,84
@@ -8194,9 +8238,6 @@ psychology_support,False,False,pt,True,0.9,0.5,LLAMA2_7B_CHAT,84
 psychology_support,False,False,pt,True,0.8,0.9,LLAMA2_70B_CHAT,84
 psychology_support,False,False,pt,True,0.9,0.9,LLAMA2_13B_CHAT,84
 psychology_support,False,False,pt,True,0.25,0.9,LLAMA2_13B_CHAT,84
-psychology_support,False,False,ru,True,0.25,0.9,LLAMA2_13B_CHAT,84
-psychology_support,False,False,ru,True,0.25,0.5,LLAMA2_13B_CHAT,84
-psychology_support,False,False,ru,True,0.8,0.5,LLAMA2_7B_CHAT,84
 psychology_support,False,False,ru,True,0.9,0.9,LLAMA2_7B_CHAT,84
 psychology_support,False,False,ja,True,0.9,0.9,LLAMA2_13B_CHAT,84
 psychology_support,False,False,ja,True,0.8,0.75,LLAMA2_13B_CHAT,84
@@ -8224,8 +8265,6 @@ psychology_support,False,True,ko,True,0.8,0.5,MISTRAL_LARGE_CHAT,84
 psychology_support,False,False,ru,True,0.9,0.75,LLAMA2_70B_CHAT,84
 psychology_support,False,False,ru,True,0.25,0.9,LLAMA3_8B_CHAT,84
 psychology_support,False,False,ru,True,0.8,0.5,LLAMA2_13B_CHAT,84
-psychology_support,False,False,ru,True,0.8,0.9,LLAMA2_13B_CHAT,84
-psychology_support,False,False,ru,True,0.5,0.9,LLAMA2_13B_CHAT,84
 psychology_support,False,False,zh,True,0.8,0.9,GPT4_CHAT,84
 psychology_support,False,False,zh,True,0.9,0.9,GPT4_CHAT,84
 psychology_support,False,False,zh,True,0.5,0.9,GPT4_CHAT,84
@@ -8251,6 +8290,7 @@ psychology_support,False,False,ja,True,0.5,0.9,COHERE_COMMAND_R_PLUS_CHAT,84
 psychology_support,False,True,ru,True,0.25,0.75,GPT4_CHAT,84
 psychology_support,False,True,ru,True,0.8,0.75,GPT4_CHAT,84
 psychology_support,False,True,ru,True,0.5,0.75,LLAMA2_13B_CHAT,84
+psychology_support,False,False,ru,True,0.5,0.75,LLAMA2_7B_CHAT,84
 psychology_support,False,False,ja,True,0.5,0.5,COHERE_COMMAND_R_CHAT,83
 psychology_support,False,False,ru,True,0.9,0.75,LLAMA3_8B_CHAT,83
 psychology_support,False,False,ru,True,0.5,0.9,LLAMA2_70B_CHAT,83
@@ -8263,17 +8303,16 @@ psychology_support,False,False,de,True,0.25,0.9,LLAMA2_70B_CHAT,83
 psychology_support,False,False,fr,True,0.25,0.75,GPT3.5_CHAT_TURBO,83
 psychology_support,False,False,fr,True,0.8,0.75,GPT3.5_CHAT_TURBO,83
 psychology_support,False,False,ru,True,0.9,0.75,LLAMA2_13B_CHAT,83
-psychology_support,False,False,ru,True,0.8,0.75,LLAMA2_13B_CHAT,83
 psychology_support,False,False,ja,True,0.5,0.75,LLAMA2_13B_CHAT,83
 psychology_support,False,True,ko,True,0.5,0.5,LLAMA2_70B_CHAT,83
 psychology_support,False,True,ko,True,0.25,0.5,LLAMA2_70B_CHAT,83
 psychology_support,False,False,ru,True,0.8,0.9,LLAMA2_70B_CHAT,83
-psychology_support,False,False,ru,True,0.9,0.9,LLAMA2_13B_CHAT,83
 psychology_support,False,False,ru,True,0.25,0.5,GPT3.5_CHAT_TURBO,83
 psychology_support,False,False,zh,True,0.5,0.5,LLAMA2_70B_CHAT,83
 psychology_support,False,False,zh,True,0.8,0.75,LLAMA2_70B_CHAT,83
 psychology_support,False,False,pt,True,0.5,0.5,LLAMA3_70B_CHAT,83
 psychology_support,False,True,ru,True,0.8,0.9,LLAMA2_13B_CHAT,83
+psychology_support,False,False,ru,True,0.25,0.5,COHERE_COMMAND_R_PLUS_CHAT,83
 psychology_support,False,False,zh,True,0.9,0.9,MISTRAL_LARGE_CHAT,82
 psychology_support,False,False,ja,True,0.5,0.75,COHERE_COMMAND_R_PLUS_CHAT,82
 psychology_support,False,False,it,True,0.9,0.75,LLAMA2_7B_CHAT,82
@@ -8287,13 +8326,11 @@ psychology_support,False,False,pt,True,0.5,0.5,GPT3.5_CHAT_TURBO,81
 psychology_support,False,False,ja,True,0.8,0.5,COHERE_COMMAND_R_CHAT,80
 psychology_support,False,False,ja,True,0.9,0.5,LLAMA2_7B_CHAT,80
 psychology_support,False,False,pt,True,0.9,0.9,COHERE_COMMAND_R_CHAT,80
-psychology_support,False,False,ru,True,0.8,0.5,COHERE_COMMAND_R_PLUS_CHAT,71
+psychology_support,False,False,ru,True,0.8,0.9,LLAMA2_13B_CHAT,70
 psychology_support,False,False,pt,True,0.25,0.5,LLAMA2_70B_CHAT,70
 psychology_support,False,False,ko,True,0.8,0.9,COHERE_COMMAND_R_CHAT,70
 psychology_support,False,False,zh,True,0.9,0.5,LLAMA2_7B_CHAT,70
 psychology_support,False,False,zh,True,0.25,0.75,LLAMA2_7B_CHAT,70
-psychology_support,False,False,ru,True,0.9,0.5,COHERE_COMMAND_R_PLUS_CHAT,70
-psychology_support,False,False,ru,True,0.5,0.9,COHERE_COMMAND_R_PLUS_CHAT,70
 psychology_support,False,False,pt,True,0.9,0.75,LLAMA2_13B_CHAT,70
 psychology_support,False,False,it,True,0.8,0.5,COHERE_COMMAND_R_PLUS_CHAT,70
 psychology_support,False,False,it,True,0.9,0.5,LLAMA2_7B_CHAT,70
@@ -8302,7 +8339,6 @@ psychology_support,False,False,ja,True,0.25,0.5,COHERE_COMMAND_R_CHAT,69
 psychology_support,False,False,pt,True,0.8,0.9,MISTRAL_LARGE_CHAT,69
 psychology_support,False,False,ja,True,0.5,0.5,LLAMA2_7B_CHAT,69
 psychology_support,False,False,zh,True,0.5,0.75,LLAMA2_70B_CHAT,69
-psychology_support,False,False,ru,True,0.9,0.9,COHERE_COMMAND_R_PLUS_CHAT,69
 psychology_support,False,False,ru,True,0.8,0.9,LLAMA2_7B_CHAT,69
 psychology_support,False,False,ru,True,0.25,0.5,LLAMA2_7B_CHAT,69
 psychology_support,False,False,ja,True,0.8,0.75,MISTRAL_LARGE_CHAT,69
@@ -8312,6 +8348,8 @@ psychology_support,False,False,en,True,0.8,0.75,GPT3.5_CHAT_TURBO,69
 psychology_support,False,False,it,True,0.8,0.75,LLAMA2_13B_CHAT,69
 psychology_support,False,True,ru,True,0.8,0.9,LLAMA2_7B_CHAT,69
 psychology_support,False,False,fr,True,0.8,0.5,GPT3.5_CHAT_TURBO,69
+psychology_support,False,False,ru,True,0.8,0.5,LLAMA2_7B_CHAT,68
+psychology_support,False,False,ru,True,0.9,0.5,LLAMA2_7B_CHAT,68
 psychology_support,False,True,ru,True,0.9,0.5,LLAMA2_13B_CHAT,68
 psychology_support,False,True,ru,True,0.25,0.9,LLAMA2_13B_CHAT,68
 psychology_support,False,False,ja,True,0.25,0.75,LLAMA2_70B_CHAT,68
@@ -8365,9 +8403,9 @@ psychology_support,False,False,ja,True,0.25,0.75,LLAMA2_13B_CHAT,67
 psychology_support,False,False,de,True,0.5,0.9,LLAMA2_70B_CHAT,67
 psychology_support,False,False,fr,True,0.5,0.9,COHERE_COMMAND_R_CHAT,67
 psychology_support,False,False,de,True,0.8,0.75,LLAMA3_8B_CHAT,57
-psychology_support,False,False,ru,True,0.5,0.75,LLAMA2_13B_CHAT,55
 psychology_support,False,False,de,True,0.8,0.5,LLAMA2_7B_CHAT,55
 psychology_support,False,False,de,True,0.5,0.9,LLAMA2_7B_CHAT,55
+psychology_support,False,False,ru,True,0.9,0.5,COHERE_COMMAND_R_PLUS_CHAT,54
 psychology_support,False,True,ru,True,0.5,0.5,GPT4_CHAT,54
 psychology_support,False,False,ja,True,0.9,0.9,LLAMA2_70B_CHAT,54
 psychology_support,False,False,ja,True,0.9,0.75,COHERE_COMMAND_R_CHAT,54
@@ -8375,6 +8413,7 @@ psychology_support,False,True,ko,True,0.5,0.9,LLAMA2_70B_CHAT,54
 psychology_support,False,True,ko,True,0.9,0.9,LLAMA2_70B_CHAT,54
 psychology_support,False,True,ko,True,0.25,0.9,LLAMA2_13B_CHAT,54
 psychology_support,False,False,ko,True,0.25,0.5,LLAMA2_13B_CHAT,54
+psychology_support,False,False,ru,True,0.9,0.9,COHERE_COMMAND_R_PLUS_CHAT,53
 psychology_support,False,False,zh,True,0.25,0.9,MISTRAL_LARGE_CHAT,53
 psychology_support,False,False,ru,True,0.8,0.9,LLAMA3_8B_CHAT,53
 psychology_support,False,True,ko,True,0.9,0.5,LLAMA2_70B_CHAT,53
@@ -8388,6 +8427,7 @@ psychology_support,False,False,fr,True,0.9,0.9,LLAMA2_13B_CHAT,51
 psychology_support,False,False,pt,True,0.25,0.9,LLAMA2_70B_CHAT,42
 psychology_support,False,False,pt,True,0.25,0.5,LLAMA2_13B_CHAT,42
 psychology_support,False,True,ru,True,0.8,0.5,COHERE_COMMAND_R_CHAT,42
+psychology_support,False,False,ru,True,0.5,0.75,LLAMA2_13B_CHAT,39
 psychology_support,False,False,pt,True,0.5,0.9,LLAMA2_7B_CHAT,39
 psychology_support,False,False,zh,True,0.9,0.75,MISTRAL_LARGE_CHAT,39
 psychology_support,False,True,ko,True,0.25,0.75,LLAMA2_70B_CHAT,39
@@ -9800,6 +9840,8 @@ technology_exploration,False,False,fr,True,0.25,0.75,MISTRAL_LARGE_CHAT,116
 technology_exploration,False,False,fr,True,0.8,0.5,LLAMA3_70B_CHAT,116
 technology_exploration,False,False,fr,True,0.5,0.75,LLAMA3_70B_CHAT,116
 technology_exploration,False,False,fr,True,0.25,0.75,LLAMA3_70B_CHAT,116
+technology_exploration,False,False,en,True,0.5,0.75,GPT4_CHAT,116
+technology_exploration,False,False,en,True,0.9,0.75,GPT4_CHAT,116
 technology_exploration,False,False,es,True,0.5,0.5,LLAMA2_70B_CHAT,115
 technology_exploration,False,False,fr,True,0.5,0.9,COHERE_COMMAND_R_PLUS_CHAT,115
 technology_exploration,False,False,ja,True,0.25,0.75,COHERE_COMMAND_R_PLUS_CHAT,115
@@ -9819,7 +9861,6 @@ technology_exploration,False,False,zh,True,0.25,0.75,MISTRAL_LARGE_CHAT,114
 technology_exploration,False,False,it,True,0.9,0.9,COHERE_COMMAND_R_PLUS_CHAT,114
 technology_exploration,False,False,pt,True,0.9,0.9,LLAMA3_70B_CHAT,114
 technology_exploration,False,False,ko,True,0.8,0.75,GPT4_CHAT,114
-technology_exploration,False,False,ko,True,0.8,0.75,GPT3.5_CHAT_TURBO,113
 technology_exploration,False,False,en,True,0.8,0.9,COHERE_COMMAND_R_PLUS_CHAT,113
 technology_exploration,False,False,de,True,0.25,0.75,GPT4_CHAT,111
 technology_exploration,False,False,ko,True,0.8,0.5,GPT3.5_CHAT_TURBO,108
@@ -9960,6 +10001,8 @@ technology_exploration,False,False,fr,True,0.9,0.5,LLAMA3_8B_CHAT,84
 technology_exploration,False,False,fr,True,0.8,0.9,GPT3.5_CHAT_TURBO,84
 technology_exploration,False,False,fr,True,0.5,0.75,GPT3.5_CHAT_TURBO,84
 technology_exploration,False,False,fr,True,0.9,0.5,GPT3.5_CHAT_TURBO,84
+technology_exploration,False,False,en,True,0.5,0.5,COHERE_COMMAND_R_CHAT,84
+technology_exploration,False,False,en,True,0.5,0.75,COHERE_COMMAND_R_CHAT,84
 technology_exploration,False,False,ru,True,0.25,0.5,LLAMA2_13B_CHAT,83
 technology_exploration,False,False,ja,True,0.8,0.9,COHERE_COMMAND_R_PLUS_CHAT,83
 technology_exploration,False,False,es,True,0.5,0.9,LLAMA2_70B_CHAT,83
@@ -10901,8 +10944,7 @@ text_greetings,False,False,ja,True,0.5,0.75,LLAMA3_8B_CHAT,84
 text_greetings,False,False,ja,True,0.9,0.5,LLAMA3_8B_CHAT,84
 text_greetings,False,False,ja,True,0.8,0.5,LLAMA3_8B_CHAT,84
 text_greetings,False,False,ja,True,0.8,0.9,LLAMA3_8B_CHAT,84
-text_greetings,False,False,it,True,0.25,0.75,COHERE_COMMAND_R_CHAT,84
-text_greetings,False,False,it,True,0.8,0.9,GPT3.5_CHAT_TURBO,84
+text_greetext_greetings,False,False,it,True,0.8,0.9,GPT3.5_CHAT_TURBO,84
 text_greetings,False,False,ru,True,0.8,0.9,LLAMA2_70B_CHAT,84
 text_greetings,False,False,ru,True,0.9,0.5,COHERE_COMMAND_R_CHAT,84
 text_greetings,False,False,ja,True,0.8,0.75,MISTRAL_LARGE_CHAT,84
@@ -11530,4 +11572,5 @@ web_design,False,False,fr,True,0.8,0.75,LLAMA2_70B_CHAT,67
 web_design,False,False,pt,True,0.9,0.75,MISTRAL_LARGE_CHAT,67
 web_design,False,False,pt,True,0.5,0.5,LLAMA2_13B_CHAT,53
 web_design,False,False,es,True,0.8,0.5,LLAMA3_70B_CHAT,53
+web_design,False,False,pt,True,0.8,0.5,MISTRAL_LARGE_CHAT,53
 web_design,False,False,pt,True,0.8,0.5,MISTRAL_LARGE_CHAT,53

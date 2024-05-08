@@ -25,9 +25,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 pytest
+          pip install pytest wheel
           pip install -e .
           python setup.py sdist bdist_wheel
       - name: Test with pytest
         run: |
           pytest tests/ -W ignore::DeprecationWarning
+          python test_table.py
+      # TODO: add the twine upload
