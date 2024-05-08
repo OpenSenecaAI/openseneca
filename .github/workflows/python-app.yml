@@ -29,10 +29,14 @@ jobs:
           pip install -e .
           python setup.py sdist bdist_wheel
           cp .env.example .env
+      - name: Build Weights(.pk)
+        run: |
+          python convert_router.py csv_to_pickle --csv_path table_weights.csv --pickle_path openseneca/weights.pk
       - name: Test with pytest
         run: |
           pytest tests/ -W ignore::DeprecationWarning
           python test_table.py
-      # TODO: build the router.pk (call it weight)
+      - name: Clean up
+        run: |
+          rm .env
       # TODO: add the twine upload
-      # TODO: post, remove .env

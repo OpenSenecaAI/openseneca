@@ -18,7 +18,7 @@ def main():
 if __name__ == "__main__":
     """
     python convert_router.py csv_to_pickle \
-        --csv_path table_router.csv \
-        --pickle_path openseneca/router.pk
+        --csv_path table_weights.csv \
+        --pickle_path openseneca/weights.pk
     """
     main()

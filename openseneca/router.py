@@ -119,9 +119,9 @@ class Router:
   #   return best_model, temperature, top_p
 
 
-router_path = os.path.dirname(os.path.abspath(__file__)) + '/router.pk'
+router_path = os.path.dirname(os.path.abspath(__file__)) + '/weights.pk'
 if not os.path.exists(router_path):
-  router_pk_path = pkg_resources.resource_filename('openseneca', 'router.pk')
+  router_pk_path = pkg_resources.resource_filename('openseneca', 'weights.pk')
 router = Router(router_path)
 
 class Prompt:

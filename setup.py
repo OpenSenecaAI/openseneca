@@ -26,7 +26,7 @@ setup(
         packages=find_packages(),
         install_requires=read_requirements(),
         package_data={
-          'openseneca': ['router.pk', 'config.yml'],
+          'openseneca': ['weights.pk', 'config.yml'],
         },
         keywords=['python']
 )

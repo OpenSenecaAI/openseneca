@@ -65,7 +65,7 @@ class RankedModel:
     self.top_p = top_p
     self.temperature = temperature
     self.model_name = model_name
-    self.router_file_name = 'table_router.csv'
+    self.router_file_name = 'table_weights.csv'
 
   def get_elo_score(self):
     """
