@@ -28,8 +28,11 @@ jobs:
           pip install pytest wheel
           pip install -e .
           python setup.py sdist bdist_wheel
+          cp .env.example .env
       - name: Test with pytest
         run: |
           pytest tests/ -W ignore::DeprecationWarning
           python test_table.py
+      # TODO: build the router.pk (call it weight)
       # TODO: add the twine upload
+      # TODO: post, remove .env

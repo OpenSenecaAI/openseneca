@@ -1,4 +1,4 @@
-# Code to test the consinstency of the table where all the ranking models are stored.
+# Test consinstency of the table where all the ranking models are stored.
 from ranking.ranking import RankedModel
 
 test_model = RankedModel(
@@ -18,8 +18,11 @@ print(" - Test model ELO Score:", end=" ")
 print(test_model.get_elo_score())
 
 # Assert that the instance is of the correct class
-assert isinstance(test_model, RankedModel), "test_model is not an instance of RankedModel"
+assert isinstance(test_model, RankedModel), \
+  "test_model is not an instance of RankedModel"
 
-# Assert that the ELO score is a non-negative integer (assuming that's the expected value)
+# Assert that the ELO score is a non-negative integer
+# (assuming that's the expected value)
 elo_score = test_model.get_elo_score()
-assert isinstance(test_model.get_elo_score(), int) and elo_score >= 0, "ELO score is not a non-negative integer"
+assert isinstance(test_model.get_elo_score(), int) and elo_score >= 0, \
+  "ELO score is not a non-negative integer"
