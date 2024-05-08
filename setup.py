@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-# test: pip install -e .
+# pip install -e .
 # rm -rf dist/ && python setup.py sdist bdist_wheel
 # twine upload --repository openseneca dist/*
 
