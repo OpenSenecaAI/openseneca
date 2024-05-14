@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 # rm -rf dist/ && python setup.py sdist bdist_wheel
 # twine upload --repository openseneca dist/*
 
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 DESCRIPTION = 'OpenSeneca'
 LONG_DESCRIPTION = 'The opensource library to orchestrate all LLMs around the world (and save money).'
 
